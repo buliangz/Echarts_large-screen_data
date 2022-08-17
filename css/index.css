@@ -1,0 +1,32 @@
+body html{
+    margin: 0px;
+    padding: 0px;
+    width: 100vh;
+    height: 100vh;
+    /* flex-direction: column; */
+}
+*{
+    border: 1px solid black;
+}
+.flex{
+    /* 默认布局---左右 */
+    display: flex;
+   
+}
+.flex1{
+    /* 占满剩余 */
+    flex: 1;
+
+}
+.column{
+    /* 上下布局 */
+    flex-direction:  column;
+}
+.mgt{
+    /* 边距 */
+    margin:15px;
+}
+.border_radius{
+    /* 圆角 */
+    border-radius: 15px;
+}
