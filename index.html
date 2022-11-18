@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"> 
+   <title>API接口调用数据</title>
+
+    <!-- 引入 jquery 文件 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- 引入 ECharts 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <!-- 引入 地图 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js?v=1598903772045"></script>
+    <script src="js/china.js"></script>
+
+   <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="bg" id="get_bgSize">
+    <!-- 标题 -->
+    <div class="title" id="title"><h3>全国API接口虚拟调用总量</h3></div>
+    <!-- left div -->
+    <div class="leftDiv">
+        <!-- 地图 -->
+        <div id="mapBox" class="leftDiv_top"></div>
+        <div id="leftDiv_lef" class="leftDiv_left"></div>
+        <div id="leftDiv_rig" class="leftDiv_right"></div>
+    </div>
+    <!-- right div -->
+    <div class="rightDiv">
+        <div class="rightDiv_left">
+            <div id="rightDiv_left_to" class="rightDiv_left_top"></div>
+            <div id="rightDiv_left_bo" class="rightDiv_left_bot">
+                <h4 class="API_ZXun">API资讯</h4>
+                <ul id="scroll">
+                    <li>xxAPI申请注销成功</li>
+                    <li>xx地区API无法访问调查报告</li>
+                    <li>xxAPI申请注册成功</li>
+                    <li>xx地区API服务器更新已完成</li>
+                    <li>各地区API使用率调查报告</li>
+                    <li>xxAPI累计调用次数超过1亿次</li>
+                    <li>xx地区API服务器正在维护中</li>
+                    <li>预计xxxx年API注册将达到顶峰</li>
+                    <li>API总访问量再创新高</li>
+                    <li>全球API总量超200亿亿</li>
+                    <li>xx地区API在线数量达200万次</li>
+                    <li>xxx地区年调用API数量超7万次</li>
+                    <li>API新技术优化访问速率</li>
+                    <li>实时更新API调用数据</li>
+                    <li>API在线数量实时更新</li>
+                    
+                </ul>
+                <script>
+                    window.onload = function () {
+                        function dMarquee(id) {
+                            let speed = 50; //速度
+                            let stop = 100; //停止时间
+
+                            let ul = document.getElementById(id);//获取ul元素
+                            let rows = ul.getElementsByTagName('li').length;//获取li个数
+                            let height = ul.getElementsByTagName('li')[0].offsetHeight;//取得第一个li的高度
+                            ul.innerHTML += ul.innerHTML;//获取所有li
+                            let timeID = false;//setTime的时间标示
+                            let play = function () { //移动方法
+                                ul.scrollTop++;//移动滚动条
+                                //移动到底的时候恢复为零
+                                if (ul.scrollTop > rows * height) {
+                                    ul.scrollTop = 0;
+                                }
+                                //每次滚动
+                                if (ul.scrollTop % height == 0) {
+                                    // alert(ul.scrollTop+" % "+height+" "+ul.scrollTop % height+'__'+rows * height)
+                                    timeID = setTimeout(play, stop);
+                                } else {
+                                    timeID = setTimeout(play, speed);
+                                }
+                            }
+                            timeID = setTimeout(play, stop);
+                            ul.onmouseover = function () {
+                                clearTimeout(timeID);
+                            }
+                            ul.onmouseout = play;
+                        }
+
+                        dMarquee('scroll')
+                    };
+                </script>
+            </div>            
+        </div>
+        <div id="rightDiv_rig" class="rightDiv_right"></div>
+        <div id="rightDiv_bot" class="rightDiv_bottom"></div>
+    </div>
+</div>
+
+</body>
+<script src="js/windowSize.js"></script>
+<script src="js/chinaMap.js"></script>
+<script src="js/index.js"></script>
+
+
+</html>
