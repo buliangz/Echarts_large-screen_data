@@ -3,7 +3,7 @@
     margin: 0px;
 }
 .bg{
-    background-color: rgb(3, 32, 57);
+/*     background-color: rgb(3, 32, 57); */
     background-image: src(../images/bg.jpg);
     
 }
