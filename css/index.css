@@ -4,7 +4,7 @@
 }
 .bg{
     background-color: rgb(3, 32, 57);
-    background-image: url(./images/bg.jpg);
+    background-image: src(/images/bg.jpg);
     
 }
 .title{
