@@ -80,7 +80,7 @@
 .rightDiv_left_top{
     width: 100%;
     height: 48%;
-    background-image: url(/images/map.png);
+    background-image: url(../images/map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-color: rgba(240, 248, 255, 0.405); */
@@ -92,7 +92,7 @@
     color: #fff;
     text-indent: 1em;
     line-height: 2em;
-    background-image: url(/images/map.png);
+    background-image: url(../images/map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-color: rgba(40, 77, 110, 0.405); */
@@ -114,7 +114,7 @@
     /* border: 1px #e5e5e5 solid; */
     font-size: 16px;
     color: #f0f0f0;
-    /* background-image: url("../images/p.png"); */
+    /* background-image: url("/images/p.png"); */
 }
 
 #scroll li {
@@ -131,7 +131,7 @@
     margin-left: 2%;
     height: 68%;
     float: left;
-    background-image: url(/images/arightboxtop.png);
+    background-image: url(../images/arightboxtop.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-color: rgba(126, 43, 43, 0.34); */
@@ -141,7 +141,7 @@
     height: 30%;
     margin-top: 2%;
     float: left;
-    background-image: url(/images/rightDiv_bottom.png);
+    background-image: url(../images/rightDiv_bottom.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
