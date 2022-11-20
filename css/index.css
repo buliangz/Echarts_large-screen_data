@@ -4,7 +4,7 @@
 }
 .bg{
     background-color: rgb(3, 32, 57);
-    background-image: src(/images/bg.jpg);
+    background-image: src(../images/bg.jpg);
     
 }
 .title{
@@ -43,7 +43,7 @@
     height: 30%;
     margin-top: 2%;
     float: left;
-    background-image: url(/images/map.png);
+    background-image: url(../images/map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-color: rgba(193, 168, 137, 0.44); */
@@ -54,7 +54,7 @@
     margin-top: 2%;
     margin-left: 2%;
     float: right;
-    background-image: url(/images/map.png);
+    background-image: url(../images/map.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* background-color: rgba(189, 144, 90, 0.44); */
